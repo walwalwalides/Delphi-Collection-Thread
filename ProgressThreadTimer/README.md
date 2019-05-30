@@ -1,5 +1,5 @@
 # ProgressThreadTimer
-- Create a ProgressBar as a Thread Timer.                   
+- Make a Progressbar Run in a Different Thread.                   
 ![](ProgressThreadTimer.png) 
 
 
