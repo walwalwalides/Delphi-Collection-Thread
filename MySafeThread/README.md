@@ -1,5 +1,5 @@
 # MySafeThread
-- Create and Define Your Own Safe Threads.                   
+- Create and Define Your Own Safe Thread.                   
 ![](MySafeThread.png) 
 
 
