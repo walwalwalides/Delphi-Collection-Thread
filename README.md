@@ -1,6 +1,7 @@
-# Delphi-Collection-FMX
-My FMX Delphi Collection
-![](Delphi-Collection-FMX_.png)
+# Delphi-Collection-Thread
+Delphi-Collection-Thread
+
+![](Delphi-Collection-Thread.png)
 **Authors:**  *WalWalWalides*
 ------
 
@@ -9,5 +10,5 @@ My FMX Delphi Collection
 | File | Contents | 
 | --- | --- |
 | .gitignore | Git ignores the files in this file |
-
+|[MySafeThread](https://github.com/walwalwalides/Delphi-Collection-Thread/tree/master/MySafeThread)|Create And Define Your Own Thread| 
 | README.md | The readme for this project|
