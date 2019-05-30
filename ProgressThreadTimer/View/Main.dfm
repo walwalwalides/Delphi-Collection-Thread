@@ -29,8 +29,6 @@ object frmMain: TfrmMain
     Align = alBottom
     Step = 1
     TabOrder = 0
-    ExplicitLeft = -2
-    ExplicitTop = 330
   end
   object GrBoxCounter: TGroupBox
     Left = 3

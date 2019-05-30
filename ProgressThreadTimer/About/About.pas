@@ -1,5 +1,5 @@
 { ============================================
-  Software Name : 	HandShakeThread
+  Software Name : 	ProgressThreadTimer
   ============================================ }
 { ******************************************** }
 { Written By WalWalWalides                     }
