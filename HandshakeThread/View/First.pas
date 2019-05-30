@@ -149,14 +149,14 @@ end;
 
 procedure TfrmFirst.btnCalculeClick(Sender: TObject);
 var
-  wfso: DWORD;
+  DResult: DWORD;
 resourcestring
   rsServerStopped = 'Server Thread is Stopped';
 begin
   SharedBuffer := edtEnterValue.Text;
   SetEvent(EventRequestFirst);
-  wfso := WaitForSingleObject(EventRequestSecond, TIMEOUT);
-  if (wfso = WAIT_TIMEOUT) then
+  DResult := WaitForSingleObject(EventRequestSecond, TIMEOUT);
+  if (DResult = WAIT_TIMEOUT) then
     Messagebox(Handle, PChar(rsServerStopped), PChar(SERVERSTOPPED), MB_ICONWARNING);
   stResult.Caption := SharedBuffer;
 end;

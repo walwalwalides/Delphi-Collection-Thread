@@ -26,10 +26,6 @@ object frmFirst: TfrmFirst
     Height = 370
     Align = alClient
     TabOrder = 0
-    ExplicitLeft = 8
-    ExplicitTop = 8
-    ExplicitWidth = 385
-    ExplicitHeight = 351
     object GroupBox1: TGroupBox
       AlignWithMargins = True
       Left = 4
@@ -39,9 +35,6 @@ object frmFirst: TfrmFirst
       Align = alClient
       Caption = 'Calcule: '
       TabOrder = 0
-      ExplicitTop = 0
-      ExplicitWidth = 377
-      ExplicitHeight = 241
       object Label2: TLabel
         Left = 20
         Top = 32
@@ -92,8 +85,6 @@ object frmFirst: TfrmFirst
       Align = alBottom
       Caption = 'Result'
       TabOrder = 1
-      ExplicitTop = 280
-      ExplicitWidth = 377
       object Label1: TLabel
         Left = 20
         Top = 33
