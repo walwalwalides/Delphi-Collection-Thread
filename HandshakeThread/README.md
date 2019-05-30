@@ -1,6 +1,6 @@
-# MySafeThread
+# HandshakeThread
 - Create and Define Your Own Thread.                   
-![](MySafeThread.png) 
+![](HandshakeThread.png) 
 
 
 
