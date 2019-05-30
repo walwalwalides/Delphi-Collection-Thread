@@ -10,5 +10,5 @@ Delphi-Collection-Thread
 | File | Contents | 
 | --- | --- |
 | .gitignore | Git ignores the files in this file |
-|[MySafeThread](https://github.com/walwalwalides/Delphi-Collection-Thread/tree/master/MySafeThread)|Create And Define Your Own Thread| 
+|[MySafeThread](https://github.com/walwalwalides/Delphi-Collection-Thread/tree/master/MySafeThread)|Create and Define Your Own Thread| 
 | README.md | The readme for this project|
