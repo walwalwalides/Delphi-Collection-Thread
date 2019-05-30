@@ -1,5 +1,5 @@
 # HandshakeThread
-- Creating and using WIN32 Events and Combined With Thread .                   
+- Creating and Using WIN32 Events Objects Combined With a Single Thread .                   
 ![](HandShakeThread.png) 
 
 
