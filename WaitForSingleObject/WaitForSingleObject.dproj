@@ -98,7 +98,7 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <Icon_MainIcon>ProgressThreadTimer.ico</Icon_MainIcon>
+        <Icon_MainIcon>WaitForSingleObject_Icon.ico</Icon_MainIcon>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppEnableHighDPI>true</AppEnableHighDPI>
     </PropertyGroup>

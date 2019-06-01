@@ -1,11 +1,11 @@
 { ============================================
-  Software Name : 	ProgressThreadTimer
+  Software Name : 	WaitForSingleObject
   ============================================ }
 { ******************************************** }
-{ Written By WalWalWalides                     }
-{ CopyRight © 2019                             }
-{ Email : WalWalWalides@gmail.com              }
-{ GitHub :https://github.com/walwalwalides     }
+{ Written By WalWalWalides }
+{ CopyRight © 2019 }
+{ Email : WalWalWalides@gmail.com }
+{ GitHub :https://github.com/walwalwalides }
 { ******************************************** }
 unit Main;
 
@@ -17,12 +17,7 @@ uses
 
 type
   TfrmMain = class(TForm)
-    Label1: TLabel;
-    Label2: TLabel;
-    lblThreadTimes: TStaticText;
-    lblTickCount: TStaticText;
     prgbrMain: TProgressBar;
-    GrBoxCounter: TGroupBox;
     MMMain: TMainMenu;
     File1: TMenuItem;
     Exit1: TMenuItem;
@@ -44,13 +39,17 @@ type
     BitbtnStart: TBitBtn;
     BitBtnSTOP: TBitBtn;
     Exit2: TMenuItem;
+    memDisplay: TMemo;
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure BitbtnStartClick(Sender: TObject);
     procedure actAboutExecute(Sender: TObject);
     procedure actExitExecute(Sender: TObject);
     procedure BitBtnSTOPClick(Sender: TObject);
+    procedure memDisplayKeyPress(Sender: TObject; var Key: Char);
   private
+    procedure EnableControlls(Enable: Boolean);
+
     { Private-Deklarationen }
   public
     { Public-Deklarationen }
@@ -60,10 +59,17 @@ const
   MAXCOUNT = 99;
 
 var
-  ThreadID: LongWord;
-  p: Pointer;
+  hThread: THandle;
+  EventArray: THandle;
+  ThreadID: Cardinal;
+  wf: DWORD;
   frmMain: TfrmMain;
-  bRunning: Integer = 0;
+
+resourcestring
+  rsThreadStart = 'Thread is Starting : ';
+  rsWO = 'Thread Was Terminated by the User';
+  rsWT = 'Thread Did Not Finish Within 3 seconds';
+  rsWF = 'Error!';
 
 implementation
 
@@ -71,60 +77,27 @@ uses About;
 
 {$R *.dfm}
 
-type
-  TThreadParameter = record
-    FlblTickCount: TStaticText;
-    FlblThreadTimes: TStaticText;
-  end;
+procedure TfrmMain.EnableControlls(Enable: Boolean);
+begin
+  BitbtnStart.Enabled := Enable;
+  BitBtnSTOP.Enabled := Enable;
 
-  PTThreadParameter = ^TThreadParameter;
+end;
 
 function Thread(p: Pointer): Integer;
-var
-  lblCounter: TStaticText;
-  lblTickCount, lblThreadTimes: TStaticText;
-  Counter: Integer;
-  TickCountStart, TickCountEnd: Cardinal;
-  KernelTimeStart, KernelTimeEnd: FileTime;
-  UserTimeStart, UserTimeEnd: FileTime;
-  Dummy: TFileTime;
-  KernelTimeElapsed, UserTimeElapsed, TotalTime: Int64;
+resourcestring
+  rsReturn = 'Press Enter - Or Not ...';
 begin
-  Screen.Cursor := crHourGlass;
-
+  frmMain.memDisplay.Lines[0] := rsReturn;
   result := 0;
-  Counter := 1;
-  lblTickCount := PTThreadParameter(p)^.FlblTickCount;
-  lblThreadTimes := PTThreadParameter(p)^.FlblThreadTimes;
-  TickCountStart := GetTickCount();
-  GetThreadTimes(GetCurrentThread, Dummy, Dummy, KernelTimeStart, UserTimeStart);
-  Screen.Cursor := crDefault;
-  while (Counter < MAXCOUNT + 1) and (bRunning = 0) do
-  begin
-    frmMain.prgbrMain.Position := frmMain.prgbrMain.Position + Counter;
-    Inc(Counter);
-    sleep(5);
-  end;
-  //GetThreadTimes
-
-  GetThreadTimes(GetCurrentThread, Dummy, Dummy, KernelTimeEnd, UserTimeEnd);
-  TickCountEnd := GetTickCount();
-  KernelTimeElapsed := Int64(KernelTimeEnd) - Int64(KernelTimeStart);
-  UserTimeElapsed := Int64(UserTimeEnd) - Int64(UserTimeStart);
-  TotalTime := (KernelTimeElapsed + UserTimeElapsed) div 100;
-  lblTickCount.Caption := IntToStr(TickCountEnd - TickCountStart);
-  lblThreadTimes.Caption := IntToStr(TotalTime);
-  FreeMem(p);
-
-  frmMain.prgbrMain.Position := 0;
 end;
 
 procedure TfrmMain.FormCreate(Sender: TObject);
-
 begin
-
   frmMain.Position := poMainFormCenter;
   frmMain.WindowState := wsNormal;
+  memDisplay.Clear;
+  EventArray := CreateEvent(nil, False, False, nil);
   // --------------------------------------------  //
 
 end;
@@ -151,24 +124,46 @@ end;
 
 procedure TfrmMain.BitbtnStartClick(Sender: TObject);
 begin
+  BitbtnStart.Enabled := False;
+  memDisplay.Clear;
   frmMain.prgbrMain.Position := 0;
   //
-  GetMem(p, sizeof(TThreadParameter));
-  PTThreadParameter(p)^.FlblTickCount := lblTickCount;
-  PTThreadParameter(p)^.FlblThreadTimes := lblThreadTimes;
+  memDisplay.Lines[0] := rsThreadStart;
+  hThread := BeginThread(nil, 0, @Thread, nil, 0, ThreadID);
 
-  CloseHandle(BeginThread(nil, 0, @Thread, p, 0, ThreadID));
+  if (hThread <> INVALID_HANDLE_VALUE) then
+  begin
+    wf := WaitForSingleObject(hThread, 3000);
+    case wf of
+      WAIT_OBJECT_0:
+        memDisplay.Lines[0] := rsWO;
+      WAIT_TIMEOUT:
+        memDisplay.Lines[0] := rsWT;
+      WAIT_FAILED:
+        memDisplay.Lines[0] := rsWT;
+    end;
+    Sleep(3000);
+    CloseHandle(hThread);
+    EnableControlls(True);
+  end;
 
 end;
 
 procedure TfrmMain.BitBtnSTOPClick(Sender: TObject);
 begin
   //
+  SetEvent(EventArray);
 end;
 
 procedure TfrmMain.FormDestroy(Sender: TObject);
 begin
-  InterlockedExchange(bRunning, 1);
+  //
+end;
+
+procedure TfrmMain.memDisplayKeyPress(Sender: TObject; var Key: Char);
+begin
+  if (Key = #13) then
+    SetEvent(EventArray);
 end;
 
 end.

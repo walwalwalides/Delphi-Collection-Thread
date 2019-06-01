@@ -1,5 +1,5 @@
 { ============================================
-  Software Name : 	ProgressThreadTimer
+  Software Name : 	WaitForSingleObject
   ============================================ }
 { ******************************************** }
 { Written By WalWalWalides                     }

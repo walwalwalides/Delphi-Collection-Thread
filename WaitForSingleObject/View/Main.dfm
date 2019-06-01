@@ -30,51 +30,9 @@ object frmMain: TfrmMain
     Step = 1
     TabOrder = 0
   end
-  object GrBoxCounter: TGroupBox
-    Left = 3
-    Top = 280
-    Width = 225
-    Height = 100
-    TabOrder = 1
-    object Label1: TLabel
-      Left = 29
-      Top = 27
-      Width = 79
-      Height = 13
-      Alignment = taRightJustify
-      AutoSize = False
-      Caption = 'GetTickCount:'
-    end
-    object Label2: TLabel
-      Left = 39
-      Top = 56
-      Width = 82
-      Height = 13
-      Alignment = taRightJustify
-      Caption = 'GetThreadTimes:'
-    end
-    object lblThreadTimes: TStaticText
-      Left = 138
-      Top = 56
-      Width = 58
-      Height = 17
-      AutoSize = False
-      BorderStyle = sbsSunken
-      TabOrder = 0
-    end
-    object lblTickCount: TStaticText
-      Left = 138
-      Top = 27
-      Width = 58
-      Height = 17
-      AutoSize = False
-      BorderStyle = sbsSunken
-      TabOrder = 1
-    end
-  end
   object BitbtnStart: TBitBtn
-    Left = 347
-    Top = 355
+    Left = 448
+    Top = 8
     Width = 100
     Height = 25
     Cursor = crHandPoint
@@ -115,12 +73,12 @@ object frmMain: TfrmMain
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000000000003827174D0000000000000000000000000000
       0000000000000000000000000000000000000000000000000000}
-    TabOrder = 2
+    TabOrder = 1
     OnClick = BitbtnStartClick
   end
   object BitBtnSTOP: TBitBtn
-    Left = 453
-    Top = 355
+    Left = 448
+    Top = 39
     Width = 100
     Height = 25
     Cursor = crHandPoint
@@ -161,12 +119,23 @@ object frmMain: TfrmMain
       174D3827174D3827174D3827174D3827174D3827174D3827174D3827174D3827
       174D3827174D3827174D3827174D3827174D3827174D3827174D3827174D3827
       174D3827174D3827174D3827174D3827174D3827174D3827174D}
-    TabOrder = 3
+    TabOrder = 2
     OnClick = BitBtnSTOPClick
   end
+  object memDisplay: TMemo
+    Left = 0
+    Top = 0
+    Width = 442
+    Height = 383
+    Align = alLeft
+    Lines.Strings = (
+      'memDisplay')
+    TabOrder = 3
+    OnKeyPress = memDisplayKeyPress
+  end
   object MMMain: TMainMenu
-    Left = 128
-    Top = 115
+    Left = 480
+    Top = 251
     object File1: TMenuItem
       Caption = '&File'
       object Exit1: TMenuItem
@@ -197,8 +166,8 @@ object frmMain: TfrmMain
     end
   end
   object acMainList: TActionList
-    Left = 185
-    Top = 104
+    Left = 449
+    Top = 232
     object actOpenFile: TAction
       Category = 'File'
       Caption = 'Open File(s)...'
