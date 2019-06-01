@@ -1,6 +1,6 @@
 # WaitForSingleObject
 - Waits Until the Specified Object is in the signaled state.                   
-![](ProgressThreadTimer.png) 
+![](WaitForSingleObject.png) 
 
 
 
