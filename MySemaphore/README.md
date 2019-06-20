@@ -6,7 +6,7 @@
 
 # Features  
 - Creates Semaphore Object .
-- Check User Parameters before adding using .
+- Check User Parameters before adding using thread .
 
 
 
