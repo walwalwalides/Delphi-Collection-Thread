@@ -1,3 +1,12 @@
+{ ============================================
+  Software Name : 	MySemaphore
+  ============================================ }
+{ ******************************************** }
+{ Written By WalWalWalides }
+{ CopyRight © 2019 }
+{ Email : WalWalWalides@gmail.com }
+{ GitHub :https://github.com/walwalwalides }
+{ ******************************************** }
 unit DataModule;
 
 interface

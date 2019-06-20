@@ -1,11 +1,11 @@
 { ============================================
-  Software Name : 	WaitForSingleObject
+  Software Name : 	MySemaphore
   ============================================ }
 { ******************************************** }
-{ Written By WalWalWalides                     }
-{ CopyRight © 2019                             }
-{ Email : WalWalWalides@gmail.com              }
-{ GitHub :https://github.com/walwalwalides     }
+{ Written By WalWalWalides }
+{ CopyRight © 2019 }
+{ Email : WalWalWalides@gmail.com }
+{ GitHub :https://github.com/walwalwalides }
 { ******************************************** }
 unit About;
 
