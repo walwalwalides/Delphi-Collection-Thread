@@ -309,7 +309,7 @@ object frmMain: TfrmMain
   end
   object AppEvtMain: TApplicationEvents
     OnIdle = AppEvtMainIdle
-    Left = 88
-    Top = 224
+    Left = 48
+    Top = 280
   end
 end
