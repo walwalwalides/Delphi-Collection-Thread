@@ -1,13 +1,12 @@
-# WaitForSingleObject
-- Waits Until the Specified Object is in the Signaled State.                   
-![](WaitForSingleObject.png) 
+# MySemaphore
+- Creates named Semaphore Object .                   
+![](MySemaphore.png) 
 
 
 
 # Features  
-- Create a Single Thread .
-- Creating Event Handler . 
-
+- Creates Semaphore Object .
+- Check User Parameters before adding using .
 
 
 
@@ -22,6 +21,8 @@
 | .gitignore | Git ignores the files in this file |
 | About.pas | About view of the programme |
 | Main.pas | Main view of the programme |
-| WaitForSingleObject.dpk | The compiler project file |
-| WaitForSingleObject.dproj | The MSBUILD project file |
+| Cheeck.pas | Cheeck view of the programme |
+| DataModule.pas | Module of the programme |
+| MySemaphore.dpk | The compiler project file |
+| MySemaphore.dproj | The MSBUILD project file |
 | README.md | The readme for this project |
