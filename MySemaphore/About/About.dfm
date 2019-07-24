@@ -356,7 +356,7 @@ object frmAbout: TfrmAbout
     Top = 250
     Width = 155
     Height = 20
-    Hint = 'www.delphinautes.fr'
+    Hint = 'GitHub'
     Caption = 
       '<a href="https://github.com/walwalwalides">github.com/walwalwali' +
       'des</a>'
