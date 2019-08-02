@@ -1,12 +1,12 @@
 # AnonymThread
-- Create anonymous thread with approch.                   
+- Create Anonymous Thread With Approch.                   
 ![](AnonymThread.png) 
 
 
 
 # Features  
-- Execute code in an anonymous thread .
-- Checking thread running before close
+- Execute Code in an Anonymous Thread .
+- Checking Thread if is running before Close the Application .
 
 
 
