@@ -16,6 +16,7 @@ My Own Delphi-Collection ( Thread )
 |[ProgressThreadTimer](https://github.com/walwalwalides/Delphi-Collection-Thread/tree/master/ProgressThreadTimer)|Make a Progressbar Run in a Different Thread|
 |[WaitForSingleObject](https://github.com/walwalwalides/Delphi-Collection-Thread/tree/master/WaitForSingleObject)|Waits Until the Specified Object is in the Signaled State|
 |[PaintThread](https://github.com/walwalwalides/Delphi-Collection-Thread/tree/master/PaintThread)|Draw Random Pixel On Vcl Form Using Thread|
+|[AnonymThread](https://github.com/walwalwalides/Delphi-Collection-Thread/tree/master/AnonymThread)|Create Anonymous Thread With Approch|
 | README.md | The readme for this project|
 
 ------
