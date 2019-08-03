@@ -57,6 +57,7 @@ type
   private
     { Private declarations }
     procedure CreateAction;
+    procedure InfoLblb(Sender: TObject);
   public
     { Public declarations }
   end;
@@ -96,14 +97,14 @@ procedure TFrmMain.btnClearClick(Sender: TObject);
 var
   i: Integer;
 begin
-//  for i := 0 to vtsList.ComponentCount-1 do
-//  begin
-//    if (vtsList.Components[i] is TRectangle) then
-//    begin
-//      vtsList.Components[i].Free;
-//
-//    end;
-//  end;
+  for i := 0 to vtsList.ComponentCount - 1 do
+  begin
+    if (vtsList.Components[i] is TRectangle) then
+    begin
+      vtsList.Components[i].Free;
+
+    end;
+  end;
 
 end;
 
@@ -112,6 +113,11 @@ begin
   CreateAction;
 end;
 
+procedure TFrmMain.InfoLblb(Sender: TObject);
+begin
+  //
+  showmessage(Copy(TControl(Sender).Name,2,length(TControl(Sender).Name)));
+end;
 
 procedure TFrmMain.CreateAction;
 begin
@@ -139,11 +145,14 @@ begin
         LRct.Margins.Left := 2;
         LRct.Margins.Right := 2;
         LRct.Width := vtsList.Width;
-        LRct.Name := LRct.ClassName + i.ToString;
+        LRct.name := LRct.ClassName + i.ToString;
+        LRct.Cursor := crhandpoint;
+        LRct.OnClick := InfoLblb;
+
         // ------------------------Create Label as Rectangle Title-----------------------------------
         LLbl := TLabel.Create(LRct);
         LLbl.Parent := LRct;
-        LLbl.Text := 'Rectangle ' + i.ToString;
+        LLbl.Text := ' Rectangle ' + i.ToString;
         LLbl.Align := TAlignLayout.Client;
 
         vtsList.AddObject(LRct);
@@ -170,19 +179,19 @@ begin
     procedure(const AExceptionMessage: string)
     begin // OnError
       TLoading.Hide;
-      ShowMessage(AExceptionMessage);
+      showmessage(AExceptionMessage);
     end, False);
 end;
 
 procedure TFrmMain.FormCreate(Sender: TObject);
 begin
   FrmMain.position := TFormPosition.MainFormCenter;
-  btnCreate.Cursor := crHandPoint;
+  btnCreate.Cursor := crhandpoint;
   btnCreate.Margins.Top := 3;
   btnCreate.Margins.Bottom := 3;
   btnCreate.Margins.Right := 3;
 
-  btnClear.Cursor := crHandPoint;
+  btnClear.Cursor := crhandpoint;
   btnClear.Margins.Top := 3;
   btnClear.Margins.Bottom := 3;
   btnClear.Margins.Left := 3;
