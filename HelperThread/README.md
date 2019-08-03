@@ -1,11 +1,11 @@
 # HelperThread
-- Customize thread to Create Objects.                   
+- Managing Threads and Custom Services.                  
 ![](HelperThread.png) 
 
 
 
 # Features  
-- Create Objects Dynamically At Run Time .
+- Create Objects Dynamically at Run Time .
 
 
 
