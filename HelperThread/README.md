@@ -1,12 +1,11 @@
 # HelperThread
-- Create Anonymous Thread With Approch.                   
+- Customize thread to Create Objects.                   
 ![](HelperThread.png) 
 
 
 
 # Features  
-- Execute Code in an Anonymous Thread .
-- Checking Thread if is running before Close the Application .
+- Create Objects Dynamically At Run Time .
 
 
 
