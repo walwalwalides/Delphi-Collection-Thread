@@ -101,7 +101,9 @@ begin
   begin
     if (vtsList.Components[i] is TRectangle) then
     begin
+
       vtsList.Components[i].Free;
+
 
     end;
   end;
@@ -116,7 +118,9 @@ end;
 procedure TFrmMain.InfoLblb(Sender: TObject);
 begin
   //
+  TRectangle(TControl(Sender)).Fill.Color:=TColorRec.White;
   showmessage(Copy(TControl(Sender).Name,2,length(TControl(Sender).Name)));
+
 end;
 
 procedure TFrmMain.CreateAction;
