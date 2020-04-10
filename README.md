@@ -4,6 +4,13 @@ My Own Delphi-Collection ( Thread )
 ![](Delphi-Collection-Thread.png)
 **Authors:**  *WalWalWalides*
 ------
+![Platforms](https://img.shields.io/badge/Supported%20platforms-Win32%20and%20Win64-red.svg)
+![GitHub](https://img.shields.io/github/license/walwalwalides/Delphi-Collection-Thread)
+
+![Platform](https://img.shields.io/badge/delphi->%3D_2010-glue)
+![GitHub last commit](https://img.shields.io/github/last-commit/walwalwalides/Delphi-Collection-Thread)
+
+[![GitHub stars](https://img.shields.io/github/stars/walwalwalides/Delphi-Collection-Thread)](https://github.com/walwalwalides/Delphi-Collection-Thread/stargazers)
 
 ## Contains
 
