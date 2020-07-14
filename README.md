@@ -30,7 +30,7 @@ My Own Delphi-Collection ( Thread )
 ------
 ## Description
 "Delphi-Collection-Thread" contain different examples of threading subject.
-This Collection explore thread thema.
+This collection deliver different example about theme Threading.
 
 As always, if you have any ideas or suggestions that would make a exemple more interesting and useful for you and anyone interested,Please let me know. 
 You can reach me under email : walwalwalides@gmail.com ,or just text me.
