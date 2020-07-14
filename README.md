@@ -28,7 +28,14 @@ My Own Delphi-Collection ( Thread )
 | README.md | The Readme for this Project|
 
 ------
+## Description
+"Delphi-Collection-Thread" contain different examples of threading subject.
+This Collection explore thread thema.
 
+As always, if you have any ideas or suggestions that would make a exemple more interesting and useful for you and anyone interested,Please let me know. 
+You can reach me under email : walwalwalides@gmail.com ,or just text me.
+
+You are welcome to join and participate to improve any choosed exemple.
 # If You Want To Donate!
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y79F36A9BGLHS&source=url)
