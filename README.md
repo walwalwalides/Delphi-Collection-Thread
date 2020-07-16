@@ -1,5 +1,5 @@
 # Delphi-Collection-Thread
-My Own Delphi-Collection ( Thread ) 
+- My Own Delphi-Collection ( Thread ) 
 
 ![](Delphi-Collection-Thread.png)
 **Authors:**  *WalWalWalides*
