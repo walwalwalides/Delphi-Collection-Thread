@@ -19,7 +19,6 @@
 
 | File | Contents | 
 | --- | --- |
-| .gitignore | Git ignores the Files in this File |
 |[MySafeThread](https://github.com/walwalwalides/Delphi-Collection-Thread/tree/master/MySafeThread)|Create and Define Your Own Thread| 
 |[MySemaphore](https://github.com/walwalwalides/Delphi-Collection-Thread/tree/master/MySemaphore)|Creates named semaphore Object| 
 |[HandshakeThread](https://github.com/walwalwalides/Delphi-Collection-Thread/tree/master/HandshakeThread)|Creating and Using Win32 Events Objects Combined With a Single Thread|
@@ -28,7 +27,9 @@
 |[PaintThread](https://github.com/walwalwalides/Delphi-Collection-Thread/tree/master/PaintThread)|Draw Random Pixel On Vcl Form Using Thread|
 |[AnonymThread](https://github.com/walwalwalides/Delphi-Collection-Thread/tree/master/AnonymThread)|Create Anonymous Thread With Approch|
 |[HelperThread](https://github.com/walwalwalides/Delphi-Collection-Thread/tree/master/HelperThread)|Managing Threads and Custom Services |      
-| README.md | The Readme for this Project|
+| README.md | The Readme for this Project |
+| .gitignore | Git ignores the Files in this File |
+
 
 ------
 ## Description
