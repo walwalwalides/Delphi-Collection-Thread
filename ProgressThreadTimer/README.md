@@ -1,6 +1,12 @@
 # ProgressThreadTimer
-- Make a Progressbar Run in a Different Thread.                   
-![](ProgressThreadTimer.png) 
+- Make a Progressbar Run in a Different Thread.    
+
+<p align="Center">
+<img src=ProgressThreadTimer.png />
+<p/>
+
+**Authors:**  *WalWalWalides*
+
 
 
 
