@@ -1,6 +1,12 @@
 # MySemaphore
-- Creates named Semaphore Object .                   
-![](MySemaphore.png) 
+- Creates named Semaphore Object .  
+
+<p align="Center"/>
+<img src=MySemaphore.png />
+<p/>
+
+**Authors:**  *WalWalWalides*
+
 
 
 
