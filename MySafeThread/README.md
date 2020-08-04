@@ -1,6 +1,12 @@
 # MySafeThread
-- Create and Define Your Own Safe Thread.                   
-![](MySafeThread.png) 
+- Create and Define Your Own Safe Thread.      
+
+<p align="center" />
+<img src=MySafeThread.png />
+<p/>
+
+**Authors:**  *WalWalWalides*
+
 
 
 
