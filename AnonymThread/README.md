@@ -1,6 +1,12 @@
 # AnonymThread
-- Create Anonymous Thread With Approch.                   
-![](AnonymThread.png) 
+- Create Anonymous Thread With Approch.    
+
+<p align="center"/>
+<img src=AnonymThread.png />
+<p/>
+
+**Authors:**  *WalWalWalides*
+
 
 
 
