@@ -1,6 +1,12 @@
 # PaintThread
-- Draw Random Pixel On Vcl Form Using Thread.                   
-![](PaintThread.png) 
+- Draw Random Pixel On Vcl Form Using Thread.    
+
+<p align="Center"/>
+<img src=PaintThread.png/>
+<p/>
+
+**Authors:**  *WalWalWalides*
+
 
 
 
@@ -19,10 +25,11 @@
 
 | File | Contents | 
 | --- | --- |
-| .gitignore | Git ignores the files in this file |
 | About.pas | About view of the programme |
 | Main.pas | Main view of the programme |
 | uPaintThread.pas | uPaintThread Unit |
 | PaintThread.dpk | The compiler project file |
 | PaintThread.dproj | The MSBUILD project file |
 | README.md | The readme for this project |
+| .gitignore | Git ignores the files in this file |
+
