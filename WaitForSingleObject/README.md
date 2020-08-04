@@ -1,6 +1,7 @@
 # WaitForSingleObject
-- Waits Until the Specified Object is in the Signaled State.                   
-![](WaitForSingleObject.png) 
+- Waits Until the Specified Object is in the Signaled State.   
+
+<img src =WaitForSingleObject.png />
 
 **Authors:**  *WalWalWalides*
 
