@@ -1,9 +1,9 @@
 # Delphi-Collection-Thread
 > My Own Delphi-Collection ( Thread ) 
 
-<p align = center
+<p align="center">
 <img src=Delphi-Collection-Thread.png/>
-p/>
+<p/>
 
 **Authors:**  *WalWalWalides*
 ------
