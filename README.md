@@ -1,7 +1,10 @@
 # Delphi-Collection-Thread
-- My Own Delphi-Collection ( Thread ) 
+> My Own Delphi-Collection ( Thread ) 
 
-![](Delphi-Collection-Thread.png)
+<p align = center
+<img src=Delphi-Collection-Thread.png/>
+p/>
+
 **Authors:**  *WalWalWalides*
 ------
 ![Platforms](https://img.shields.io/badge/Supported%20platforms-Win32%20and%20Win64-red.svg)
