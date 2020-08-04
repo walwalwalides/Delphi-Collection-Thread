@@ -1,6 +1,12 @@
 # HandshakeThread
 - Creating and Using WIN32 Events Objects Combined With a Single Thread .                   
-![](HandShakeThread.png) 
+
+<p align="center" />
+<img src=HandShakeThread.png />
+<p/>
+
+**Authors:**  *WalWalWalides*
+
 
 
 
